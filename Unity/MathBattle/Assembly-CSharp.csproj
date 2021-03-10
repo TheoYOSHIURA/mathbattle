@@ -57,13 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Sprites\Hero Knight - Pixel Art\Demo\Sensor_HeroKnight.cs" />
-    <Compile Include="Assets\JumpState.cs" />
-    <Compile Include="Assets\PlayerBehaviour.cs" />
-    <Compile Include="Assets\StateInterface.cs" />
     <Compile Include="Assets\Sprites\Hero Knight - Pixel Art\Demo\HeroKnight.cs" />
     <Compile Include="Assets\Sprites\Hero Knight - Pixel Art\ColorSwap\ColorSwap_HeroKnight.cs" />
     <Compile Include="Assets\Sprites\Hero Knight - Pixel Art\Demo\DestroyEvent_HeroKnight.cs" />
-    <Compile Include="Assets\test.cs" />
+    <Compile Include="Assets\Scripts\OperationManager.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Sprites\Hero Knight - Pixel Art\ColorSwap\Sprites-ColorSwap.shader" />
