@@ -52,7 +52,7 @@ public class OperationManager : MonoBehaviour
         {
             scoreValue--;
         }
-        score.text = scoreValue.ToString();
+        score.text = "Score: " + scoreValue.ToString();
 
         GenerateRandomOperation();
     }

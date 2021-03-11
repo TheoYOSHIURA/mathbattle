@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public GameObject playerCharacter;
+    private GameObject playerCharacter;
 
-    private int moveSpeed = 10;
+    private float moveSpeed = 0.005F;
 
 
     // Update is called once per frame
+    private void Start()
+    {
+        playerCharacter = GameObject.Find("Hero");
+    }
+
     void Update()
     {
-        transform.position = Vector2.MoveTowards(this.transform.position, playerCharacter.transform.position, moveSpeed);
+        if (this.transform.position.x - playerCharacter.transform.position.x > 2 )
+        {
+            transform.position = Vector2.MoveTowards(this.transform.position, new Vector2(playerCharacter.transform.position.x, playerCharacter.transform.position.y + 1.4F), moveSpeed);
+        }
     }
 }
