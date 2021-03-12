@@ -43,7 +43,6 @@ public class OperationManager : MonoBehaviour
 
     public void CheckAnswer(Button button)
     {
-        Debug.Log("aled");
         if ((x * y).ToString() == button.GetComponentInChildren<Text>().text)
         {
             scoreValue++;
